@@ -1,0 +1,140 @@
+/*
+
+ <header class="header">
+         <div class="container">
+            <div class="header__body">
+               <a href="" class="header__logo"></a>
+               <div class="header__burger">
+                  <span></span>
+               </div>
+               <nav class="header__menu">
+                  <ul class="header__list">
+                     <li><a href="" class="header__link">TEXT</a></li>
+                     <li><a href="" class="header__link">TEXT</a></li>
+                     <li><a href="" class="header__link">TEXT</a></li>
+                  </ul>
+               </nav>
+            </div>
+         </div>
+ </header>
+
+*/
+/*
+
+ .header {
+   position: fixed;
+   top: 0;
+   left: 0;
+   z-index: 50;
+   width: 100%;
+   &::before {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 3;
+      width: 100%;
+      height: 100%;
+      content: "";
+   }
+   &__body {
+      display: flex;
+      position: relative;
+      align-items: center;
+      justify-content: space-between;
+      height: 60px;
+   }
+   &__logo {
+      z-index: 3;
+      border-radius: 50%;
+      width: 40px;
+      height: 40px;
+   }
+   &__burger {
+      display: none;
+   }
+   &__burger.active::before {
+      top: 9px;
+      transform: rotate(45deg);
+   }
+   &__burger.active::after {
+      bottom: 9px;
+      transform: rotate(-45deg);
+   }
+   &__burger.active span {
+      transform: scale(0);
+   }
+   &__list {
+      display: flex;
+      position: relative;
+      z-index: 3;
+      li {
+         margin: 0 0 0 20px;
+      }
+   }
+   &__link {
+      background: #000000;
+   }
+}
+
+@media (max-width: $md3) {
+   body.lock {
+      overflow: hidden;
+   }
+   .header__list {
+      display: block;
+      li {
+         
+      }
+   }
+   .header__body {
+      height: 50px;
+   }
+   .header__logo {
+   }
+   .header__menu {
+      position: fixed;
+      top: -100%;
+      left: 0;
+      transition-duration: 0.3s;
+      width: 100%;
+      height: 100%;
+      overflow: auto;
+   }
+   .header__menu.active {
+      top: 0;
+      transition-duration: 0.3s;
+   }
+   .header__burger {
+      display: block;
+      position: relative;
+      z-index: 3;
+      width: 30px;
+      height: 20px;
+      &::after,
+      &::before {
+         position: absolute;
+         left: 0;
+         transition-duration: 0.3s;
+         width: 100%;
+         height: 2px;
+         content: "";
+         background: #000000;
+      }
+      &::before {
+         top: 0;
+      }
+      &::after {
+         bottom: 0;
+      }
+      span {
+         position: absolute;
+         top: 9px;
+         left: 0;
+         transition-duration: 0.3s;
+         width: 100%;
+         height: 2px;
+         background: #000000;
+      }
+   }
+}
+*/

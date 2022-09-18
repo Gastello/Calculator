@@ -1,0 +1,143 @@
+@import "null_style.scss";
+/*-------------------------------FONTS-----------------------------------*/
+//&display=swap&subset=cyrillic-ext
+@import "fonts.scss";
+@import url(`https://fonts.googleapis.com/css?family=Familjen+Grotesk:700`);
+
+/*-------------------------DEFAULT FONT-----------------------------*/
+$fontFamily: 'Familjen Grotesk',
+sans-serif;
+/*-------------------------------VARIABLES-------------------------------*/
+$paddingContainer: 15;
+$maxWidthContainer: 960+$paddingContainer * 2;
+
+$md1: $maxWidthContainer+$paddingContainer;
+$md2: 991.98px;
+$md3: 767.98px;
+$md4: 479.98px;
+
+/*
+   @media (max-width: $md2) {
+   }
+   @media (max-width: $md3) {
+   }
+   @media (max-width: $md4) {
+   }
+*/
+/*--------------------------CONTENT WRAPPERS------------------------------*/
+body {
+   font-family: $fontFamily;
+   font-weight: 700;
+}
+
+.wrapper {
+   width: 100%;
+   min-height: 100%;
+   overflow: hidden;
+   display: flex;
+   flex-direction: column;
+}
+
+.container {
+   max-width: $maxWidthContainer + px;
+   margin: 0 auto;
+   padding: 0 $paddingContainer + px;
+}
+
+.page {
+   flex: 1 1 100%;
+   background-image: url('../images/background.png');
+   background-size: cover;
+   display: flex;
+   align-items: center;
+   justify-content: center;
+}
+
+.calculator {
+   width: 360px;
+   height: 520px;
+   background: url('../images/board.png');
+   background-size: contain;
+   background-repeat: no-repeat;
+   border-radius: 20px;
+   filter: drop-shadow(4px 4px 4px rgba(0, 0, 0, 0.5));
+}
+
+.input {
+   margin-top: 30px;
+   padding: 0 30px;
+
+   input {
+      text-align: right;
+      width: 300px;
+      height: 50px;
+      box-shadow: inset 0px 0px 5px #000000;
+      border-radius: 20px;
+      background-color: transparent;
+      font-family: $fontFamily;
+      font-style: normal;
+      font-weight: 700;
+      font-size: 32px;
+      line-height: 30px;
+      color: #F9FDFF;
+      padding: 0 25px;
+   }
+}
+
+.equals {
+
+   img {
+      clip-path: polygon(88% 23%, 90% 36%, 59% 54%, 63% 81%, 52% 97%, 7% 95%, 8% 66%);
+      cursor: pointer;
+      position: absolute;
+      top: 0px;
+      right: -160px;
+      width: 350px;
+      height: 184px;
+      &:hover{ 
+         filter: drop-shadow(0px 1px 1px rgb(0, 0, 0));
+         transition: all .3s linear;
+      }
+   }
+}
+
+.buttons__col {
+   padding: 100px 30px 0 30px;
+}
+
+.buttons__row {
+   display: flex;
+   margin-bottom: 10px;
+   img {
+      width: 68px;
+      height: 50px;
+      margin-right: 10px;
+      filter: drop-shadow(0px 6px 3px rgba(0, 0, 0, 0.5));
+      cursor: pointer;
+
+      &:hover{
+         transform: translateY(5px);
+         filter: drop-shadow(0px 1px 3px rgba(0, 0, 0, 0.5));
+         transition: all .1s linear;
+      }
+   }
+
+   .zero {
+      width: 146px;
+      height: 50px;
+   }
+}
+
+/*------------------------------HEADER------------------------------------*/
+@import "header.scss";
+/*-------------------------------BEM-BLOCKS-------------------------------*/
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
